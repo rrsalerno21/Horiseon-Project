@@ -1,0 +1,70 @@
+/* Flex the header */
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Style nav bar */
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Remove bullet points from nav list, flex, center, and
+add margin to the nav <ul> tag */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+/* Add margin to each list item */
+nav ul li {
+    margin: 0px 20px;
+}
+
+/* Change all nav link colors to white and remove underline */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+
+/*add nav hover effect*/
+nav ul li a:hover {
+    font-size: 21px;
+    transition: 0.25s;
+}
+
+
+/* When screen wraps nav links, center the header and
+center the list items via flex box*/
+@media only screen and (max-width: 1090px) {
+    /* Center header and adjust height to prevent hover bug */
+    header {
+        justify-content: center;
+        min-height: 137px;
+    }
+
+    /* Center the list items within the <ul> tag */
+    header nav ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    /* Make hero image smaller */
+    #hero {
+        height: 500px;
+        width: 100%;
+        margin-bottom: 25px;
+        background-image: url("../images/digital-marketing-meeting.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
