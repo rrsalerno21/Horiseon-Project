@@ -20,9 +20,8 @@ header {
     color: #ffffff;
 }
 
-/* H1 display and font-size */
+/* Header h1 font-size */
 header h1 {
-    display: inline-block;
     font-size: 48px;
 }
 
@@ -31,35 +30,7 @@ header h1 {
     color: #d9dcd6;
 }
 
-/* --- Nav Bar Styling --- */
-
-/* Style nav bar */
-nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-/* Remove bullet points from nav list */
-nav ul {
-    list-style-type: none;
-}
-
-/* Set display and spacing for nav list items */
-nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/* Change all nav link colors to white and remove underline */
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* ---- End Nav Bar Styling ---- */
+/* --- See nav-bar.css for Nav Bar Styling --- */
 
 /* ---- End Header Styling ---- */
 
@@ -106,15 +77,18 @@ p {
 main section {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    min-height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    position: relative;
+    -webkit-box-shadow: 5px 3px 14px 4px rgb(160, 160, 160); 
+    box-shadow: 5px 3px 14px 4px rgb(160, 160, 160)
 }
 
 /* Set height for section images */
 main section img {
-    max-height: 200px;
+    max-width: 290px;
 }
 
 /* Adjust font and margins for main section h2s */
@@ -141,6 +115,8 @@ aside {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    -webkit-box-shadow: 5px 3px 14px 4px rgb(160, 160, 160); 
+    box-shadow: 5px 3px 14px 4px rgb(160, 160, 160)
 }
 
 /* set margin and font color for each section */
@@ -160,27 +136,33 @@ aside section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+    transition: 0.25s;
 }
 
+/* Add img hover effect */
+aside section img:hover {
+    max-width: 175px;
+    transition: 0.25s;
+}
+    
 /* ---- End of aside styling ---- */
+    
+    
+    /* ---- Footer Styling ---- */
+    
+    /* Adjust footer spacing, font, and aligment */
+    footer {
+        padding: 30px;
+        clear: both;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    /* Footer h2 font size */
+    footer h2 {
+        font-size: 20px;
+    }
+    
+    /* ---- End footer styling ---- */
 
 
-
-
-
-/* ---- Footer Styling ---- */
-
-/* Adjust footer spacing, font, and aligment */
-footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-/* Footer h2 font size */
-footer h2 {
-    font-size: 20px;
-}
-
-/* ---- End footer styling ---- */

@@ -1,0 +1,97 @@
+/* Style for desktop or larger screeen responsiveness */
+
+
+
+@media only screen and (max-width: 891px) {
+    /* ---- Start of Main Article Styling ---- */
+
+    /* Style the main section of content */
+    main {
+        width: 75%;
+        display: block;
+        margin: 0px auto;
+        
+    }
+    
+    /* change all p tag font size to 16px */
+    p {
+        font-size: 16px;
+    }
+    
+    /* Set an element to float left */
+    .float-left {
+        float: none;
+        margin: 0px auto;
+    }
+    
+    /* Set an element to float right */
+    .float-right {
+        float: none;
+        margin: 0px auto;
+    }
+    
+    /* Style each section */
+    main section {
+        margin-bottom: 20px;
+        padding: 50px;
+        max-width: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+        position: relative;
+        text-align: center;
+    }
+    
+    /* Set height for section images */
+    main section img {
+        width: 75%; 
+    }
+    
+    /* Adjust font and margins for main section h2s */
+    main section h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    
+    /* ---- End of Main Content Styling ---- */
+    
+    /* -- Aside Styling -- */
+    
+    aside {
+        padding: 50px;
+        float: none;
+        clear: both;
+        width: 75%;
+        margin: 0 auto;
+        height: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #2589bd;
+    }
+
+    /* Aside image styling */
+    aside section img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;
+        transition: 0.25s;
+    }
+
+    aside section img:hover {
+        max-width: 175px;
+        transition: 0.25s;
+    }
+
+     /* set margin and font color for each section */
+     aside section {
+        margin-bottom: 32px;
+        color: #ffffff;
+    }
+
+    /* Aside h3 margins and text alignment */
+    aside section h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    /* -- End aside styling -- */
+}
